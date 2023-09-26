@@ -14,6 +14,19 @@ pipeline{
                 url: "https://github.com/boypansit/boydevops_java_app.git"
             )
             }
-        }      
+        }
+
+        stage('Unit Test maven'){
+
+            steps{
+                
+                script {
+                    
+                    mvnTest()
+
+                }
+            }
+        }
+
     }
 }
