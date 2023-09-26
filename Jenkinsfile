@@ -10,7 +10,7 @@ pipeline{
 
             steps{
             gitCheckout(
-                branch : "main"
+                branch : "main",
                 url: "https://github.com/boypansit/boydevops_java_app.git"
             )
             }
